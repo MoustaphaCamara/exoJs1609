@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#pageContainer {
+  display: block;
+  padding-top: 100px;
+  transition: 0.3s ease;
+}
+.article {
+  width: 90%;
+  margin: 0 auto;
+}
+h2 {
+  color: gray;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.dog {
+  background: url("https://images.unsplash.com/photo-1509005084666-3cbc75184cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=477&q=80")
+    center/cover;
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 0 5px gray;
+  margin: 10px 0;
+}
+#burgerMenu {
+  position: fixed;
+  z-index: 10000;
+  left: -50px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 40px;
+  background: lightcoral;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+#burger,
+#exitBurger {
+  position: absolute;
+  transition: 0.2s ease;
+}
+#burger:hover,
+#exitBurger:hover {
+  text-shadow: 0 0 10px white;
+  transform: scale(1.4);
+}
+#burger {
+  right: 20px;
+  top: 50px;
+}
+#exitBurger {
+  bottom: 20px;
+  right: 60px;
+}
+.display {
+  transform: rotate(270deg) !important;
+}
+.pageRotate {
+  transform: rotate(-0.1turn) translateY(200px);
+}
+nav {
+  position: fixed;
+  top: -700px;
+  left: -200px;
+  width: 100%;
+  height: 700px;
+  background: gray;
+  display: flex;
+  transition: 0.3s ease;
+  justify-content: center;
+  z-index: 1000;
+}
+nav ul {
+  align-self: end;
+  display: flex;
+}
+li {
+  list-style-type: none;
+  margin: 20px;
+  transition: 0.2s ease;
+}
+li:hover {
+  text-shadow: 0 0 10px white;
+  transform: scale(1.2);
+}
+.navRotate {
+  transform: rotate(-0.1turn) translateY(200px);
+  position: fixed;
+  top: -604px;
+  left: -411px;
+}
